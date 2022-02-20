@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Get Table Service - Host: Contact Free Order and Pay"">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <meta name="apple-mobile-web-app-title" content="GetTableService for Host">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <title>GetTableService-Host</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCHg3H1l5vANgmHbPDhuFq9YqSu2M_5G_w",
+      authDomain: "foodorderingapp-4f6ac.firebaseapp.com",
+      databaseURL: "https://foodorderingapp-4f6ac.firebaseio.com",
+      projectId: "foodorderingapp-4f6ac",
+      storageBucket: "foodorderingapp-4f6ac.appspot.com",
+      messagingSenderId: "70430548453",
+      appId: "1:70430548453:web:f4a8550d8f82a10e778f0c",
+      measurementId: "G-HN221H7MRR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
